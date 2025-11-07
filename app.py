@@ -243,4 +243,5 @@ if prompt := st.chat_input("불편 사항을 말씀해 주세요."):
     st.session_state.chat_history.append(("model", response_text))
 
     if st.session_state.logging_enabled:
+
         log_conversation(prompt, response_text, selected_model)
